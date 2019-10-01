@@ -1,0 +1,60 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: #D8D8D8;
+
+}
+
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #D8D8D8;
+  font-family: 'Squada One', cursive;
+  border: 1px solid black;
+  text-decoration: none
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  width: 200px;
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+
+}
+
+a:hover {
+  color: red;
+}
+
+
+
+.nav-links {
+  display: none
+}
+
+
+
+.burger div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  margin: 3px;
+
+}
+
+/*
+Tablet
+*/
+@media screen and (max-width:1024px) {
+  a {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width:768px) {}
