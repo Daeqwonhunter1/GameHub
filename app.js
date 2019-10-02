@@ -1,15 +1,22 @@
 const button = document.querySelector('button')
 const input = document.getElementById('inp')
-const display = document.querySelector('api-div')
+const display = document.querySelector('#api-div')
+const pageOne = document.querySelector("#page-one")
+const pageTwo = document.querySelector("#page-two")
+
 
 
 const displayGames = (array) => {
-  displayGames.innerHTML = ''
-  array.forEach((game) => {
+  display.innerHTML = ''
+  array.forEach(async (game) => {
+    let coverResponse = await axios.get(`https://cors-anywhere.herokuapp.com/https://api-v3.igdb.com/covers/${game.cover}`)
+    console.log(coverResponse)
     const gameDiv = document.createElement("div");
-    gameDiv.innerHTML = `<h1>${game.name}</h1> `
+    gameDiv.innerHTML = `
+    <p>${game.name}</p> `
+    display.append(gameDiv);
   })
-  display.append(gameDiv);
+
 }
 
 
@@ -23,6 +30,8 @@ button.addEventListener("click", async () => {
     }
   })
 
+  pageOne.style.display = "none"
+  pageTwo.style.display = "block"
 
   displayGames(response.data)
   console.log(response.data)

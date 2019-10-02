@@ -150,7 +150,7 @@ button {
 h1 {
   color: black;
   position: absolute;
-  top: 300px;
+  top: 220px;
   font-size: 60px;
   font-family: 'Squada One';
   font-style: normal;
@@ -162,13 +162,7 @@ button:hover {
   opacity: 0.5;
 }
 
-#api-div {
-  border: 1px solid black;
-  position: absolute;
-  bottom: 100px;
-  width: 100px;
-  height: 100px;
-}
+
 
 /* footer {
   background-color: black;
@@ -366,4 +360,13 @@ button:hover {
   font-weight: 400;
   font-display: swap;
   color: black
+}
+
+#page-two {
+  display: none;
+
+}
+
+#api-div {
+  background-color: grey;
 }
