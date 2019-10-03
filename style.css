@@ -365,8 +365,31 @@ button:hover {
 #page-two {
   display: none;
 
+
 }
 
 #api-div {
-  background-color: grey;
+  background-color: rgb(172, 170, 170);
+}
+
+.gameP {
+  color: black;
+  font-family: 'Squada One';
+  font-size: 30px;
+  position: relative;
+  left: 40%;
+}
+
+.game-img {
+  position: relative;
+  padding: 20px;
+  left: 40%;
+  height: 250px;
+  width: 250px;
+
+}
+
+.summaryP {
+  font-family: 'Squada One';
+  font-size: 20px;
 }
