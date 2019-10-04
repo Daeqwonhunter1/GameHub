@@ -1,12 +1,10 @@
 ##GameHub
-###A plaza for all things gaming related,find a list of popular games,with the choice of adding them to your personal game list to recommend for friends and to keep track of the games you played and completed.
+###A plaza for all things gaming related,find a list of popular games,with the choice of adding them to your personal game list to recommend for friends and to keep track of the games you played and completed.You start off at the landing page,where you will see a search bar.Typing in your favortite game will re-direct you to another page where a list of your game will show.
 
-###You start off at the landing page,where you will see a search bar,and a quote under it.Above is the navbar consisting of a logo which will direct you to the landing page,the Games tab which will take you to a page giving you a list of games.A MyList tab which takes you to a page where you can see a list of games you have added(Must be logged in).As well as a LogIn and SignUp button which will allow you to create or enter into a account.
+####I encountered a few problems,namely with API calling(CORS),a few tweaks with CSS and animation with div placements.To solve these problems I used a heroku proxy that Brian hosted(Instructor) and used his server to connect with my API server.
 
 
-#Planned Features:
-* Commuity Tab that allows you to add friends and start discussions/forums
-* A Watch Tab that allows you to watch videos on a certain game from youtube/Twitch
+####I am proud of this project although I could not get all the functionality I wanted.I am glad I used gifs as background images to give the website a pop and the flicker animation to give the website a retro game theme to it.
 
 
 
