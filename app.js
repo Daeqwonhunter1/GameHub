@@ -1,7 +1,7 @@
 // const button = document.querySelector('button')
 const input = document.getElementById('inp')
 const display = document.querySelector('#api-div')
-
+const Code = document.querySelector('html')
 const pageOne = document.querySelector("#page-one")
 const pageTwo = document.querySelector("#page-two")
 
@@ -29,9 +29,10 @@ const displayGames = (array) => {
     console.log(coverResponse)
     const gameDiv = document.createElement("div");
     gameDiv.innerHTML = `
+    <div class = "each-game-div">
     <p class = "gameP">${game.name}</p> 
     <img class = "game-img" src = "http:${coverArt}">
-    <p class = "summaryP">${game.summary}</p>
+    <p class = "summaryP">${game.summary}</p></div>
     `
     display.append(gameDiv);
 
@@ -76,3 +77,22 @@ input.addEventListener("keyup", async (event) => {
     console.log(response.data)
   }
 })
+
+
+//Up down left right B A
+
+document.onkeydown = checkKey;
+
+function checkKey(event) {
+  event = event || window.event;
+
+  if (event.keyCode == '38') { ///up
+
+  } else if (event.keyCode == '40') { ///down
+  } else if (event.keyCode == '37') { ///left
+  } else if (event.keyCode == '39') { ///right
+  } else if (event.keyCode == '65') { ///a
+  } else if (event.keyCode == '66') { // b
+    Code.style.display = "none"
+  }
+}
