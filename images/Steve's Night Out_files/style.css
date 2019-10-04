@@ -1,0 +1,265 @@
+body{
+  background-image: linear-gradient(to right, white, aquamarine);
+  margin: 0;
+}
+
+Header{   
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    height: 11em;
+    background-image: linear-gradient(to right, white, aquamarine);
+    border-bottom: .2em solid white;
+    z-index: 1;
+  }
+Header h1{
+    margin: 0;
+    padding-top: .4em;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+  }
+
+.input-boxes{
+  height: 1.5em;
+  font-size: 1.3em;
+}
+#header-input{
+  display:flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0;
+  padding-top: .3em;
+  height: 3em;
+  font-size: 1em;
+}
+#city-input{
+  display: flex;
+  align-items: center;
+}
+#date-start {
+  display: flex;
+  align-items: center;
+  }
+#date-end {
+  display: flex;
+  align-items: center;
+  }
+
+#button-weather{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: .4%;
+    justify-content: flex-start;
+  }  
+#button-container{
+  width: 22%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-right: 4%;
+  text-align: left;
+}
+#search-button{
+  margin: 0;
+  padding-top: .2em;
+  padding-left: .2em;
+  
+  height: 2.5em;
+  width: 100%;
+  border: .2em solid white;
+  background-color: transparent;
+  font-size: 1.3em;
+}
+#button-weather p{
+  width: 100%;
+  margin: 0;
+  font-size: 1em;
+  margin-right: 4%;
+}
+
+#list-body{
+  padding: 11.25em 0em 2em 0em; 
+  z-index: 0;
+  background-image: linear-gradient(to right, white, aquamarine);
+  height: 100%;
+}
+
+.event-buttons{
+  width: 100%;
+  padding-top: 1%;
+  text-align: left;
+  margin-top: .5em;
+  background-image: linear-gradient(to right, white, aquamarine);
+  border: 0em solid transparent;
+  font-size: 1em;
+}
+
+.tmimages{
+  height: 13em;
+  padding-top: 1em;
+}
+.event-buttons .show-titles{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: bold;
+}
+.event-buttons .show-infos{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  }
+.event-buttons .venu-names{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2em;
+   }
+.event-buttons .venu-addresses{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  }
+
+
+#modal {
+  display: none;
+  flex-direction: row;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  background-image: linear-gradient(to right, white, aquamarine);
+  padding-top: 11.25em;
+  padding-bottom: 5em; 
+  z-index: .5; 
+  height: 100%;
+  }
+#modal-container{
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+  height: 70%;
+  }
+#modal ul {
+  list-style-type: none;
+  }
+
+.rest-names{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: bold;
+  }
+.rest-phones{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  }
+.rest-addresses{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+   }
+.rest-cuisines{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  } 
+.rest-times{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1em;
+  }   
+
+#modal ul li {
+  padding:2%;
+  }
+
+#exit {
+margin: 0;
+ font-size: 1.5em;
+ text-align: center;
+ color: black;
+ background-color: transparent;
+  }
+    
+  /* MEDIA QUERY FOR IPHONE PORTRAIT */
+  @media only screen 
+    and (max-width: 480px){
+
+      #page-header{
+        height: 13em;
+        }
+      Header h1{
+        margin: 0;
+        padding-top: .1em;
+        }
+      #header-text{
+        display:block;
+        }
+      #header-input{
+        display:block;
+        height: auto;
+        }
+      #city-input{
+        margin: 0;
+        }
+      #date-start {
+       margin: 0;
+        }
+      header #header-texts #header-input #city-input h3{
+        margin: 0;
+        }
+          
+      header #header-texts #header-input #date-start h3{
+        margin: 0;
+        }
+
+      #button-weather{
+        padding: .4%;
+        }  
+
+      #list-body{
+        padding-top: 13.25em;
+        }
+
+        #modal {
+         padding-top: 13.25em;
+          }
+        #modal-container{
+         height: 55%;
+          }
+      }
+    @media only screen 
+    and (max-height: 500px){
+
+      #page-header{
+        height:10em;
+        }
+      #header-input{
+        height: auto;
+        margin:0;
+        }
+      h3 {
+        margin:0;
+        }
+
+      #header-texts{
+        margin: 0;
+        }
+      #button-weather{
+        padding: .4%;
+         }  
+      #list-body{
+        padding-top: 10.25em;
+        }
+      .tmimages {
+        display: none;
+        }
+      #modal {
+        padding-top: 10.25em; 
+        }
+      #modal-container{
+        height: 40%;
+        }
+    }

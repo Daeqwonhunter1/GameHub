@@ -603,4 +603,10 @@ button:hover {
     justify-content: center
   }
 
+
+  .each-game-div {
+    left: 0;
+    top: 50px;
+    width: 90%;
+  }
 }
