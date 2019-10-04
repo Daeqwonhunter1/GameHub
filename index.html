@@ -8,6 +8,7 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="app.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Game Hub</title>
@@ -26,10 +27,10 @@
       <div>
         <div>
           <ul>
-            <a class="gamehub">GameHub</a>
-            <li><a href="./index.html">Home</a></li>
+            <li><a a href="./index.html" class="gamehub">GameHub</a></li>
+            <!-- <li><a href="./index.html">Home</a></li>
             <li><a href="./games.html">Games</a></li>
-            <li><a href="./trivia.html">Trivia</a></li>
+            <li><a href="./trivia.html">Trivia</a></li> -->
           </ul>
         </div>
       </div>
@@ -39,12 +40,16 @@
   <div id="page-one">
     <header class="showcase">
       <div class="container showcase-inner">
-        <h1>Search A Game</h1>
+        <div class="logo">
+          <b><span class="spanS">S<span class="spanEarch">EARCH</span> <span class="spanA">A</span> <span
+                class="spanGame">GAME</span></b>
+        </div>
+
         <input id="inp" type="text" name="getGames" placeholder="Search A Game..">
 
 
 
-        <button type="submit"><i class="fa fa-search"></i></button>
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
 
 
       </div>

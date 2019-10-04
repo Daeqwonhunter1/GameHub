@@ -1,4 +1,4 @@
-const button = document.querySelector('button')
+// const button = document.querySelector('button')
 const input = document.getElementById('inp')
 const display = document.querySelector('#api-div')
 
@@ -6,20 +6,6 @@ const pageOne = document.querySelector("#page-one")
 const pageTwo = document.querySelector("#page-two")
 
 
-
-
-// async function randomGames() {
-//   const response = await axios.get(`https://flynn-cors.herokuapp.com/https://api-v3.igdb.com/games?search=0&fields=cover`, {
-//     headers: {
-//       "user-key": '08c38743d7290d45bc9d8775857416a7'
-//     }
-//   })
-//   const randomCover = Math.floor(Math.random() * response.data.length)
-//   console.log(response)
-//   return randomCover
-// }
-
-// console.log(randomGames())
 
 
 
@@ -49,12 +35,7 @@ const displayGames = (array) => {
     `
     display.append(gameDiv);
 
-    for (i = 0; i < game.data; i++) {
-      let platformPrint = platformResponse.data[i].abbreviation
-      gameDiv.innerHTML = ` <p class = "platformP>${platformPrint}</p>`
-      display.append(gameDiv)
-      console.log(platformPrint)
-    }
+
   })
 
 }
@@ -62,23 +43,23 @@ const displayGames = (array) => {
 
 
 
-button.addEventListener("click", async () => {
-  const response = await axios.get(`https://flynn-cors.herokuapp.com/https://api-v3.igdb.com/games?search=${input.value}&fields=name,cover,summary,platforms`, {
+// button.addEventListener("click", async () => {
+//   const response = await axios.get(`https://flynn-cors.herokuapp.com/https://api-v3.igdb.com/games?search=${input.value}&fields=name,cover,summary,platforms`, {
 
-    headers: {
-      "user-key": '08c38743d7290d45bc9d8775857416a7'
-    }
-  })
+//     headers: {
+//       "user-key": '08c38743d7290d45bc9d8775857416a7'
+//     }
+//   })
 
-  pageOne.style.display = "none"
-  pageTwo.style.display = "block"
+//   pageOne.style.display = "none"
+//   pageTwo.style.display = "block"
 
-  displayGames(response.data)
-  console.log(response.data)
-})
+//   displayGames(response.data)
+//   console.log(response.data)
+// })
 
 
-input.addEventListener("keyup", async function (event) {
+input.addEventListener("keyup", async (event) => {
   if (event.key === "Enter") {
     const response = await axios.get(`https://flynn-cors.herokuapp.com/https://api-v3.igdb.com/games?search=${input.value}&fields=id,name,cover,summary,platforms`, {
 
